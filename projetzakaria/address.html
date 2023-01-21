@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Address Locator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="css/adress.css">
+</head>
+
+<body>
+  <div class="container">
+    <h3>Shipping Address</h3>
+    <p>You can click the button below to use your current location as your shipping address</p>
+    <div id="map">
+    </div>
+    <button id="showMe" class="btn">Use My Location</button>
+    <form id="shippingAddress" action="order.php" method="post">
+      <div id="locationList"></div>
+      <br>
+      <div class="input-field">
+        <textarea class="input_fields materialize-textarea" id="address" type="text" name="street"></textarea>
+        <label class="active" for="address">Address (Area and Street)</label>
+      </div>
+      <div class="input-field">
+        <input class="input_fields" id="locality" type="text" name="loc">
+        <label class="active" for="locality">Locality</label>
+      </div>
+      <div class="input-field">
+        <input class="input_fields" id="city" type="text" name="city">
+        <label class="active" for="city">City/District/Town</label>
+      </div>
+      <div class="input-field">
+        <input class="input_fields" id="postal_code" type="text" name="code">
+        <label class="active" for="pin_code">Pin Code</label>
+      </div>
+      <div class="input-field">
+        <input class="input_fields" id="landmark" type="text" name="landmark">
+        <label class="active" for="landmark">Landmark</label>
+      </div>
+      <div class="input-field">
+        <input class="input_fields" id="state" type="text" name="state">
+        <label class="active" for="State">State</label>
+        <input id="eat" type="submit" value="EAT">
+      </div>
+    </form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="adress.js"></script>
+</body>
+
+</html>

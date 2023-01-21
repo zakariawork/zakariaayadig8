@@ -1,0 +1,109 @@
+.container {
+  width: 50%;
+  max-width: 800px;
+}
+
+#map {
+  height: 50vh;
+  margin-bottom: 10px;
+  display: none;
+}
+
+#locationList .card {
+  padding: 10px;
+}
+
+#toast-container {
+  top: 50%;
+  bottom: unset;
+}
+
+.toast {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.btn {
+  background-color: rgb(218, 190, 10);
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(255, 160, 10);
+  color: white;
+  text-decoration: none;
+}
+
+textarea {
+  color: aliceblue;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input-field>label {
+  color: #ffa00a;
+  font-size: 14px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+  color: aliceblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: hello vintage;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-image: url(../images/registerphotoback.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffa00a;
+
+}
+
+#eat {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  background-color: rgb(218, 190, 10);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+
+#eat:hover {
+  background-color: #ffa00a;
+  transition: 0.7s;
+}

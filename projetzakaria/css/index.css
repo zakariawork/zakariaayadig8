@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+@font-face {
+    src: url(Hello\ Vintage.ttf);
+    font-family: 'vintage';
+}
+
+@font-face {
+    src: url(vintage.ttf);
+    font-family: 'vin';
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    background-color: black;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: #f49519;
+    font-family: hello vintage;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow: hidden;
+}
+
+#menu {
+    background-image: url(../images/gauche.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    padding: 0 30px;
+}
+
+#menu img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -20px;
+}
+
+.title p {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 0, 0);
+    margin: 0;
+}
+
+.border {
+    width: 80px;
+    height: 4px;
+    margin: 3px 0;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    background: #c19b2b00;
+}
+
+.menu-item a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 12px 0;
+    color: #DE978F;
+    font-weight: 300;
+
+}
+
+.menu-item a:hover {
+    background: rgb(0, 0, 0);
+}
+
+#food-items {
+    background-image: url(../images/backgroundim.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+    height: calc(100vh - 86px);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: url(../images/headerback.jpeg);
+    z-index: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#header .address {
+    font-size: 20px;
+
+}
+
+#map {
+    font-size: 25px;
+    color: #DE978F;
+}
+
+.add-box i {
+    font-size: 20px;
+}
+
+#header select {
+    width: 150px;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(210, 210, 210);
+    padding: 0 5px;
+}
+
+.food-items {
+    display: none;
+}
+
+.cart-toggle {
+    display: block;
+}
+
+.util i,
+.user i {
+    font-size: 50px;
+    font-family:hello vintage;
+    margin: 0 16px;
+    padding: 8px 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#mixmax,
+#parisien,
+#chami,
+#grills,
+#chinese {
+    margin-top: 40px;
+}
+
+#parisien #item-card,
+#grills #item-card {
+    background: #e49f0f6e;
+}
+
+#chinese #item-card #item-card {
+    background: #DE978F;
+}
+
+#category-name,
+.item-menu {
+    margin: 10px;
+    font-size: 35px;
+    color: #ecc101;
+    font-family: vintage;
+}
+
+#item-card {
+    width: 180px;
+    height: 220px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background: #e49f0f6e;
+    cursor: pointer;
+    transition: 0.5s all step-end;
+}
+
+#item-card:hover img {
+    transform: scale(1.2);
+}
+
+#card-top {
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+#rating {
+    padding: 7px;
+    color: goldenrod;
+    background: black;
+    font-size: 14px;
+    border-radius: 15px;
+}
+
+.fa-heart-o {
+    padding: 6px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+.toggle-heart {
+    background: orangered;
+    color: white;
+}
+
+#item-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.5s all ease-in-out;
+}
+
+#item-name {
+    margin: 5px 0;
+    font-family: vin;
+    font-size: 140px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+#item-price {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 18px;
+    font-family: vin;
+}
+
+.food-items {
+    display: none;
+}
+
+.cart-toggle {
+    display: none;
+}
+
+#cart-page {
+    background: rgb(0, 0, 0);
+    margin: 40px 10px;
+    margin-right: 50px;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+#cart-title {
+    font-size: 35px;
+    margin: 0;
+    color: indianred;
+}
+
+#cart-page table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#cart-page table thead td {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.cart-btn {
+    outline: none;
+    border: none;
+    background: crimson;
+    color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    bottom: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+#cart-page table tbody td {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+#cart-page table tbody button {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background: none;
+    background: lightcoral;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#cart-page table tbody img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+#checkout {
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 5px;
+    background: white;
+    padding: 10px 20px;
+}
+
+#checkout p {
+    margin: 15px 0;
+    float: left;
+}
+
+#total-price,
+#total-item {
+    font-size: 25px;
+    color: rgb(13, 19, 196);
+}
+
+#delievery {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#cart {
+    background-image: url(../images/droite.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding-right: 30px;
+    overflow-y: scroll;
+}
+
+.item-menu {
+    margin: 0;
+    font-size: 30px;
+    margin-top: 40px;
+    color: #f49519;
+    background: #c19b2b00;
+
+}
+
+.list-card {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.list-card:hover {
+    background: rgb(0, 0, 0);
+}
+
+.list-card:hover img {
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.2);
+}
+
+.list-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.list-name {
+    font-size: 30px;
+    font-family: vintage;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+.taste-header {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: #c19b2b00;
+}
+
+#mixmax {
+    margin-top: 10px;
+}
+
+#m-total-amount {
+    display: none;
+}
+
+#circle{
+    display: inline-block;
+    background-color: #f49519;
+    padding: 20px;
+    width: 100px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px; 
+    font-family: vintage;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
